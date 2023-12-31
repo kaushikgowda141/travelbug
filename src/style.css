@@ -1,0 +1,664 @@
+body{
+    margin:0px;
+    overflow-x: hidden;
+}
+.navbar{
+   background-color: #3FA19F;
+   width: 100%;
+}
+
+.navbar img{
+	width: 50px;
+}
+
+h2.brand-name{
+    color: white;
+    margin-top: 3px;
+    letter-spacing: 5px;
+    text-shadow: 1.5px 1px black;
+    font-family: 'Courgette', cursive;
+}
+
+#brand-second-name{
+  color: #FBB13C;
+  text-shadow: 1.5px 1px black;
+}
+
+#navbarSupportedContent{
+	margin-left: 100px;
+}
+
+.navbar-nav a{
+	color: whitesmoke;
+	font-size: 20px;
+	text-shadow: 1px 2px 2px black;
+	letter-spacing: 1px;
+}
+
+.navbar-nav a:hover{
+	color: #FBB13C;
+	font-size: 20px;
+	text-shadow: 1px 2px 2px black;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: visible;
+}
+
+.dropdown .dropbtn { 
+  min-height: 46px;	
+  font-size: 20px;  
+  text-shadow: 1px 2px 2px black;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+@media (max-width: 978px) {
+    .dropdown .dropbtn {
+      padding-left:0;
+  }
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: none;
+  cursor: pointer;
+  color: #FBB13C;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.dropdown-content a {
+  font-size: 14px;
+  float: none;
+  color: #111;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 0px 10px 10px;
+  text-shadow: 1px 0.5px 5px #666;
+  
+}
+
+.dropdown-content a:hover {
+  font-size: 14px;
+  background-color: #999;
+  color: white;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.navbar-buttons{
+    margin-right: 20px;
+}
+
+.navbar-buttons button{
+    min-width: 90px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.register{
+    background-color: #FBB13C;
+    color: black;
+}
+
+.login{
+    background-color: #fff;
+    color: black;
+}
+
+.booking-btn{
+	background-color: whitesmoke;
+	border-radius: 30px;
+	padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1E403A;
+
+    box-shadow: inset 0 0 0 0 #1E403A;
+    -webkit-transition: ease-out 0.6s;
+    -moz-transition: ease-out 0.6s;
+    transition: ease-out 0.6s;
+}
+
+.booking-btn:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  box-shadow: inset 135px 0 0 0 #1E403A;
+} 
+
+
+.home {
+    width: 100%;
+    height: 90vh;
+    background: url('../public/images/bg.jpg') no-repeat center;
+    background-size: cover; 
+}
+
+.home > .home-content {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.home > .home-content >.content {
+    color: white;
+}
+
+.home > .home-content >.content h1{
+    color: white;
+    font-size: 70px;
+    text-shadow: 2px 5px 5px black;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.country-name::after {
+    content: '';
+    color: #FBB13C;
+    animation: country-name-animate 10s infinite ease-in-out;
+}
+
+@keyframes country-name-animate {
+   0%{
+    content: 'Rome';
+}
+20%{
+    content: 'London';
+}
+40%{
+    content: 'Paris';
+}
+60%{
+    content: 'Venice';
+}
+80%{
+    content: 'Berlin';
+}
+100%{
+    content: 'Rome';
+}
+}
+
+
+.first-section{
+    min-height: 500px;
+}
+
+.logo-section{    
+    padding: 0px 50px 50px 50px;
+}
+
+.logo{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    padding: 5px 20px 15px 20px;
+}
+
+.booking-section .container{
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.booking-section input[type=date]{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 3px;
+  border: 2px solid #BBB;
+}
+
+.booking-section input[type=date]:focus{
+    border: 2px solid #55ABAF;
+    outline: none;
+}
+
+input[type=number]:focus{
+    border: 2px solid #55ABAF;
+    outline: none;
+}
+
+textarea:focus{
+    border: 2px solid #55ABAF;
+    outline: none;
+}
+
+#country:focus{
+    border: 2px solid #55ABAF;
+    outline: none;
+}
+
+input[type=number]{
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 3px;
+  border: 2px solid #BBB;
+}
+
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid #BBB;
+}
+
+#country{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 3px;
+  border: 2px solid #BBB;
+}
+
+
+label {
+  color: #37474F;  
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#book-now{
+    padding: 10px 15px 10px 15px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 25px;
+    background-color: #55ABAF;
+    color: black;
+    min-width: 125px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.second-section .card{
+    height: 450px;
+    margin: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.second-section .card img{
+    min-width: 80%;
+    border-radius: 3px;
+    box-shadow:   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h2{
+    font-size: 25px;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rating{
+    margin-left:10px;
+}
+
+.rating i{
+ color:#cecece;
+ font-size:25px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.price{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.book-now{
+    margin-left:20px;
+    margin-right:20px;
+    background-color: #FBB13C;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+.book-now:hover{
+    text-decoration: none;
+}
+
+.services-section{
+    background-color: white;
+}
+
+.d-block {
+    height: 400px;
+    padding-bottom: 100px;
+}
+
+.carousel-caption{
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-indicators li{
+    background-color: #407BFF;
+}
+
+.carousel-indicators .active{
+    background-color: #FBB13C;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23407BFF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23407BFF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+#book-now{
+    padding: 10px 15px 10px 15px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 25px;
+    background-color: #55ABAF;
+    color: black;
+    min-width: 125px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.third-section .card{
+    margin: 15px 5px 15px 5px;
+}
+
+.third-section .card img:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+.fourth-section .about-us-section{
+    margin-top: 30px;
+}
+
+.fourth-section h3{
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+.fourth-section p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+}
+
+
+.footer-section {
+  background-color: #3FA19F;
+  padding: 20px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 12px;
+}
+.social-icon > i {
+  padding: 4px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.social-icon > i:hover {
+  color: #000;
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-section h2.brand-name{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 1.5px 1px black;
+    font-family: 'Courgette', cursive;
+}
+
+.footer-section #brand-second-name{
+  color: #FBB13C;
+  text-shadow: 1.5px 1px black;
+}
+
+.footer-section p{
+    font-weight: bold;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+/* Full-width input fields */
+.login-field {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1.5px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'PT Serif', serif;
+  border-radius: 5px;
+}
+
+.login-field:focus{
+    border: 1.5px solid #FBB13C;
+}
+
+/* Set a style for all buttons */
+.login-button, .cancelbtn, .register-button{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+
+.login-button, .cancelbtn:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 8px 18px;
+  background-color: #798489;
+}
+
+/* position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 12px 0;
+  position: relative;
+}
+
+.login-section {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 75%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 450px) {
+  .cancelbtn {
+   width: 90%;
+}
+.modal-content{
+    width: 100%;
+}
+}
+
+.register-link, .login-link{
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.register-link span, .login-link span{
+    color: blue;
+    cursor: pointer;
+    
+}
+
+.register-link span:hover, .login-link span:hover{
+  color: royalblue;
+  text-decoration: underline;
+}
+
+
+/* Full-width input fields in register form*/
+.register-field{
+  width: 90%;
+  padding: 2px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  border: 1.5px solid #ccc;
+  font-family: 'PT Serif', serif;
+  border-radius: 5px;
+}
+
+.register-field:focus{
+    border: 1.5px solid #FBB13C;
+}
+
+.register-section {
+  padding: 30px;
+  padding-top: 0px;
+}
+
+input[type=radio]{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.register-section label{
+    font-size: 15px;
+/*    font-family: 'Mukta', sans-serif;*/
+font-family: 'PT Serif', serif;
+letter-spacing: 1px;
+}
+
+.login-section label{
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+#id01 h4, #id02 h4{
+   font-family: 'PT Serif', serif;
+   letter-spacing: 1px;
+   font-weight: bold;
+}
+
+.fa-circle-info{
+    cursor: pointer;
+}
+
+.error_msg{
+  color: red;
+}
