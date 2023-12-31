@@ -662,3 +662,7 @@ letter-spacing: 1px;
 .error_msg{
   color: red;
 }
+
+input[type="date"]{
+  display: inline-flex;
+}
