@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/travelbug/static/css/main.ddc081a1.css",
+    "main.js": "/travelbug/static/js/main.4ca96552.js",
+    "static/media/bg.jpg": "/travelbug/static/media/bg.45d8e7b319a1c2340f9d.jpg",
+    "index.html": "/travelbug/index.html",
+    "main.ddc081a1.css.map": "/travelbug/static/css/main.ddc081a1.css.map",
+    "main.4ca96552.js.map": "/travelbug/static/js/main.4ca96552.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddc081a1.css",
+    "static/js/main.4ca96552.js"
+  ]
+}
